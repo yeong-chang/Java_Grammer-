@@ -24,7 +24,10 @@ public class EmployeeTest {
         Employee[] employees = { e0,e1,e2,e3,e4,e5,e6,e7 };
         // 정보 출력
         for (int i = 0; i < employees.length; i++) {
-            employees[i].printTotalHours();
+        }
+
+        for (int i = 0; i < employees.length; i++) {
+            employees[i].printTotalHoursTest();
         }
     }
 }
@@ -40,11 +43,11 @@ class Employee {
         hours = arr;
     }
     // 메소드
-    void printTotalHours() {
-        System.out.printf("%s -> %d 시간\n", name, totalHours());
+    void printTotalHoursTest() {
+        System.out.printf("%s -> %d 시간\n", name, totalHoursTest());
     }
     //hours 배열의 총합을 구해주는 메서드 int 타입이므로 return 값이 생성
-    int totalHours() {
+    int totalHoursTest() {
         int sum = 0;
         for (int i = 0; i < hours.length; i++) {
             sum += hours[i];
